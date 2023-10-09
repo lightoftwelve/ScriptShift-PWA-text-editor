@@ -4,7 +4,7 @@
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
     "start": "webpack --watch",
-    "heroku-postbuild": "npm install && npm run build"
+    "heroku-postbuild": "npm install -g webpack webpack-cli && npm install && npm run build"
   },
   "engines": {
     "node": "18.17.0"
@@ -32,6 +32,8 @@
   },
   "dependencies": {
     "code-mirror-themes": "^1.0.0",
-    "idb": "^6.1.2"
+    "idb": "^6.1.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.8.0"
   }
 }
