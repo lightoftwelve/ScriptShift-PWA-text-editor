@@ -32,7 +32,7 @@ ScriptShift is a robust text editor built for web developers and writers alike. 
 
 ## Screenshots
 
-![scriptshift text editor](./client/src/images/)
+![scriptshift text and code editor after installation](./client/src/images/scriptshift-screenshot.png)
 
 ## Technologies Used
 
