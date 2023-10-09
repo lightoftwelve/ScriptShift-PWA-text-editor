@@ -13,12 +13,14 @@ module.exports = () => {
     output: {
       filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
+      publicPath: "/",
     },
     plugins: [
       // Generates an HTML file from a template and injects bundles.
       new HtmlWebpackPlugin({
         template: "./index.html",
         filename: "index.html",
+        favicon: "./src/images/flavicon.ico",
       }),
 
       // Uses custom service worker for Workbox.
@@ -29,8 +31,6 @@ module.exports = () => {
 
       // Generates a manifest.json for PWA capabilities.
       new WebpackPwaManifest({
-        // fingerprints: false,
-        // inject: true,
         name: "ScriptShift Text Editor",
         short_name: "ScriptShift",
         description: "A robust text editor for the modern web.",
@@ -64,6 +64,17 @@ module.exports = () => {
               presets: ["@babel/preset-env"],
             },
           },
+        },
+        {
+          test: /\.(png|jpe?g|gif|ico)$/i,
+          use: [
+            {
+              loader: "file-loader",
+              options: {
+                name: "assets/[name].[hash:8].[ext]",
+              },
+            },
+          ],
         },
       ],
     },

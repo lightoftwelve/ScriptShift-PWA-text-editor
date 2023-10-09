@@ -34,8 +34,8 @@ export default class {
       if (typeof lastEntryContent === "string") {
         this.editor.setValue(lastEntryContent);
       } else {
-        // Handle non-string data, maybe setting a default value or convert it to a string
-        this.editor.setValue(localData || header || "Default content here");
+        // Handle non-string data
+        this.editor.setValue(localData || header || "Default");
       }
     });
 

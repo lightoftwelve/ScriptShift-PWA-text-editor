@@ -1,32 +1,32 @@
 {
   "icons": [
     {
-      "src": "./assets/icons/icon_512x512.3ca11a97eb7d90b61fc3db0f3c5dcdb6.png",
+      "src": "./assets/icons/icon_512x512.981db4a38587617a082b1269eb331784.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "./assets/icons/icon_384x384.15214f65c1219e812d779bfcb384494a.png",
+      "src": "./assets/icons/icon_384x384.a89fffad7357fb58f36588d6e185920d.png",
       "sizes": "384x384",
       "type": "image/png"
     },
     {
-      "src": "./assets/icons/icon_256x256.873242da1488f53efeaca94de308539e.png",
+      "src": "./assets/icons/icon_256x256.5057a7a263cd627ef7b68a3a3483ab4d.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "./assets/icons/icon_192x192.1efd8d2a5218c9516adb7d6ff7907ac1.png",
+      "src": "./assets/icons/icon_192x192.c878f5b319980bc2961037096bb350d7.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./assets/icons/icon_128x128.225c312e650131cfe5a2119fd958867e.png",
+      "src": "./assets/icons/icon_128x128.215267fb4159948dfe12903b0da7efdf.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "./assets/icons/icon_96x96.97a96e0fc4eb2a8bec3b8d49d90f1d14.png",
+      "src": "./assets/icons/icon_96x96.eed39627f4701d2b7b32104caa6d4848.png",
       "sizes": "96x96",
       "type": "image/png"
     }

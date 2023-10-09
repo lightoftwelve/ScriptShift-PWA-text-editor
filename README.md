@@ -1,4 +1,4 @@
-# ScriptShift PWA Text Editor
+# ScriptShift PWA Code & Text Editor
 
 ## Overview
 
