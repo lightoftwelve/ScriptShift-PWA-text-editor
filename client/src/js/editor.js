@@ -1,4 +1,4 @@
-// Starter Code
+// Starter Code except for where noted below
 // Import methods to save and get data from the indexedDB database in './database.js'
 import { getDb, putDb } from "./database";
 import { header } from "./header";
@@ -23,13 +23,23 @@ export default class {
       tabSize: 2,
     });
 
-    // When the editor is ready, set the value to whatever is stored in indexeddb.
-    // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
+    // The following code is code i wrote as there was an error in the starter code. This was in part to resolve it:
     getDb().then((data) => {
-      console.info("Loaded data from IndexedDB, injecting into editor");
-      this.editor.setValue(data || localData || header);
+      console.log(data); // Log the data to see what you get
+
+      // Get the content from the last entry of the array
+      let lastEntryContent = data[data.length - 1]?.content;
+
+      // Check if the content is a string before setting it to the editor
+      if (typeof lastEntryContent === "string") {
+        this.editor.setValue(lastEntryContent);
+      } else {
+        // Handle non-string data, maybe setting a default value or convert it to a string
+        this.editor.setValue(localData || header || "Default content here");
+      }
     });
 
+    // Back to starter code:
     this.editor.on("change", () => {
       localStorage.setItem("content", this.editor.getValue());
     });

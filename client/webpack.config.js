@@ -29,8 +29,8 @@ module.exports = () => {
 
       // Generates a manifest.json for PWA capabilities.
       new WebpackPwaManifest({
-        fingerprints: false,
-        inject: true,
+        // fingerprints: false,
+        // inject: true,
         name: "ScriptShift Text Editor",
         short_name: "ScriptShift",
         description: "A robust text editor for the modern web.",
