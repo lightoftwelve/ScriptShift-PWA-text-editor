@@ -7,7 +7,8 @@
     "heroku-postbuild": "npm install -g webpack webpack-cli && npm install && npm run build"
   },
   "engines": {
-    "node": "18.17.0"
+    "node": "18.17.0",
+    "npm": "10.1.0"
   },
   "author": "Victoria Alawi | Light of Twelve | www.lightoftwelve.com | https://github.com/lightoftwelve | The starter code, as marked in, was provided through the UofT SCS Coding Boot Camp Online: Fullstack Flex PT course through the University of Toronto, created by edX Boot Camps LLC.",
   "license": "UNLICENSED",
