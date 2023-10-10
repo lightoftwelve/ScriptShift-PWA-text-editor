@@ -10,7 +10,7 @@ ScriptShift is a robust text editor built for web developers and writers alike. 
 - [Usage Guide](#usage-guide)
 - [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
-- [Demonstration](#demonstration)
+- [Live Demo](#live-demo)
 - [Credits](#credits)
 - [License](#license)
 
@@ -42,9 +42,7 @@ ScriptShift is a robust text editor built for web developers and writers alike. 
 
 ## Live Demo
 
-// Stay tuned for the live version of ScriptShift! We'll have it up soon.
-
-Check out the live version of this project [here](linkhere).
+Check out the live version of this project [here](https://scriptshift-36f993584bdf.herokuapp.com/).
 
 ## Credits
 
