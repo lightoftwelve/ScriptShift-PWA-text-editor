@@ -19,8 +19,6 @@ module.exports = () => {
       // Generates an HTML file from a template and injects bundles.
       new HtmlWebpackPlugin({
         template: "./index.html",
-        filename: "index.html",
-        favicon: "./src/images/flavicon.ico",
       }),
 
       // Uses custom service worker for Workbox.
@@ -31,13 +29,15 @@ module.exports = () => {
 
       // Generates a manifest.json for PWA capabilities.
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: "ScriptShift Text Editor",
         short_name: "ScriptShift",
         description: "A robust text editor for the modern web.",
         background_color: "#ffffff",
         theme_color: "#333333",
-        start_url: "./",
-        publicPath: "./",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
